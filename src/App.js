@@ -4,7 +4,6 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import HomePage from "./pages/HomePage/HomePage";
 import SavedPage from "./pages/SavedPage/SavedPage";
 
-// import Navbar from "./components/Navbar/Navbar";
 
 class App extends Component {
 

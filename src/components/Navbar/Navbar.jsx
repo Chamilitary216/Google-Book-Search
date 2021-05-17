@@ -22,9 +22,9 @@ const Navbar = () => {
     return (
         <nav className = {nav ? "nav active" : "nav"}>
         
-        <Link to = "#" className = "logo">
+        {/* <Link to = "#" className = "logo">
             <img src = {logo} alt = ''/>
-        </Link>
+        </Link> */}
         
         <input className = "menu-btn" type = "checkbox" id = "menu-btn"/>
         <label className = "menu-icon" htmlFor = "menu-btn">
@@ -32,7 +32,7 @@ const Navbar = () => {
         </label>
 
     <ul className = "menu" >
-        <li><Link to = "/home"> Home </Link></li>
+        <li><Link to = "/"> Home </Link></li>
         <li><Link to = "/saved"> Saved Books </Link></li>
     </ul>
 

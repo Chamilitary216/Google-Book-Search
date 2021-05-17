@@ -1,5 +1,10 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
+import { Container } from "../../components/Grid/Grid";
 import Navbar from "../../components/Navbar/Navbar";
+import Jumbotron from "../../components/Jumbotron/Jumbotron";
+import {Input, SubmitBtn} from "../../components/Search/Search";
+import API from "../../utilities/API";
+import ResultList from "../../components/ResultList/ResultList";
 
 class Home extends Component {
 
@@ -57,12 +62,12 @@ class Home extends Component {
                 <Container fluid>
                 <Jumbotron />
                 <form>
-                    <h5>Search for books</h5>
+                    <h5>Search A Book</h5>
                     <Input 
                         value={this.state.search}
                         onChange={this.handleInputChange}
                         name="search"
-                        placeholder="e.g. Harry Potter"
+                        placeholder="e.g. Star Wars"
                     />
                     <SubmitBtn onClick={this.handleFormSubmit}/>
                 </form>
